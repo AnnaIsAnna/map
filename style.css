@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha|Philosopher');
+
+body{
+	font-family: 'Philosopher', sans-serif;
+	background-color: black;
+	overflow: hidden;
+}
+
+*{
+	margin:0;
+	padding:0:
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.map{
+	width: 1018px;
+	height:650px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(images/map_background.jpg);
+    background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	
+}
+
+.left_cover{
+	position: absolute;
+	top: 0;
+	left: -490px;
+	width: 50%;
+	background-color: black;
+	text-align: right;
+	animation: open_left 3s ease;
+}
+
+.right_cover{
+	position: absolute;
+	top: 0;
+	right: -490px;
+	width: 50%;
+	background-color: black;
+	animation: open_right 3s ease;
+}
+
+.pointer li{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50% 50% 50% 0;
+	transform: rotate(-45deg);
+	background-color: rgba(137, 118, 80, 0.5);
+	border: 2px solid black;
+	
+}
+
+.pointer p{
+	transform: rotate(45deg);
+	width: 100px;
+	height: 70px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.pointer a{
+	
+	color: #ffffcd;
+	
+}
+
+.pointer li:hover{
+	background-color: rgba(226, 172, 61, 0.8);
+	
+}
+
+.pointer li:hover a{
+	
+	color: #49402d;
+}
+
+.about li{
+	position: fixed;
+	bottom: -550px;
+	left: 50%;
+	margin-bottom: -275px;
+	margin-left: -275px;
+	transform: scale(0.2);
+	width: 550px;
+	height: 550px;
+	border-radius: 50%;
+	background-color: rgba(250, 253, 102, 0.8);
+	opacity:1;
+	color: #49402d;
+	font-size: 18pt;
+	opacity:0;
+	transition: transform 1s ease, opacity 1s ease;
+	box-shadow: 4px 4px 10px 2px black;
+	
+	
+}
+
+.about a{
+	float: right;
+	width: 62px;
+	height: 62px;
+	border-radius: 50%;
+	background-color: black;
+	text-decoration: none;
+	color: #ffffcd;
+	font-size: 20pt;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.about p{
+	padding: 100px;
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+}
+
+
+#link1{
+	top: 70px;
+	left: 550px;
+	
+}
+
+#link1_about{
+	background-image: url(images/590.jpg);
+	background-size: cover;
+		
+}
+
+#link1_about p{
+	opacity: 0;
+	color: black;
+}
+
+#link1_about:hover p{
+	background-color: rgba(250, 253, 102, 0.5);
+	opacity: 1;
+	
+}
+
+
+
+#link1_about:target {
+  opacity: 1;
+  transform: scale(1);
+  bottom: 50%;
+}
+
+
+
+#link2{
+	top: 180px;
+	left: 120px;
+}
+
+#link2_about:target {
+  opacity: 1;
+ transform: scale(1);
+  bottom: 50%;
+}
+
+#link3{
+	top: 300px;
+	left: 100px;
+}
+
+
+#link3_about:target {
+  opacity: 1;
+ transform: scale(1);
+  bottom: 50%;
+}
+
+#link4{
+	top: 250px;
+	left: 450px;
+}
+
+#link4_about:target {
+  opacity: 1;
+ transform: scale(1);
+  bottom: 50%;
+}
+
+#link5{
+	bottom: 40px;
+	left: 430px;
+}
+
+#link5_about:target {
+  opacity: 1;
+ transform: scale(1);
+  bottom: 50%;
+}
+
+#link5_about{
+	background-image: url(images/1474308320_1_14.jpg);
+
+	background-size: cover;
+	
+	
+}
+
+#link5_about p{
+	opacity: 0;
+	color: black;
+}
+
+#link5_about:hover p{
+	background-color: rgba(250, 253, 102, 0.5);
+	opacity: 1;
+	
+}
+
+#link6{
+	top: 20px;
+	right: 50px;
+}
+
+#link6_about:target {
+  opacity: 1;
+ transform: scale(1);
+  bottom: 50%;
+}
+
+#link7{
+	top: 120px;
+	right: 150px;
+}
+
+#link7_about:target {
+  opacity: 1;
+ transform: scale(1);
+  bottom: 50%;
+}
+
+#link8{
+	bottom: 280px;
+	right: 40px;
+}
+
+#link8_about:target {
+  opacity: 1;
+ transform: scale(1);
+  bottom: 50%;
+}
+
+
+#link9{
+	bottom: 130px;
+	right: 60px;
+}
+
+#link9_about:target {
+  opacity: 1;
+ transform: scale(1);
+  bottom: 50%;
+}
+
+
+
+
+
+
+
+@keyframes open_left {
+    0%, 50% {
+        left: 0px;
+    }
+    100% {
+        left: -490px;
+    }
+}
+
+@keyframes open_right {
+    0%, 50% {
+        right: 0px;
+    }
+    100% {
+        right: -490px;
+    }
+}
+
